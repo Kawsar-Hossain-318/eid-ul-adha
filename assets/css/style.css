@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background: linear-gradient(#8b016a,#6f1159);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+#header .logo{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header .nav li{
+    list-style: none;
+    margin-left: 20PX;
+}
+#header .nav li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #ffffff;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+#header .nav li a:hover,
+#header .nav li a.active{
+    color: #111;
+    background: #ffffff;
+}
+/* section part here */
+#first_section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#first_section img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+#first_section img#lamp{
+    mix-blend-mode: screen;
+    z-index: 10000;
+}
+#first_section img#masjid{
+    transform: translateY(-20px);
+}
+#first_section img#starts2{
+    display: none;
+}
+#text{
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 10vw;
+    white-space: nowrap;
+    text-shadow: 0 10px 15px rgba(0,0,0,0.25);
+    font-family: 'Rancho',cursive;
+}
+
+/* second start here */
+.second{
+    position: relative;
+    padding: 100px;
+    background: #96283a;
+}
+.second h2{
+    font-size: 2.8em;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.second p{
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+
+/* responsive here */
+@media (max-width:992px){
+    #header{
+        padding: 20px ;
+    }
+    #header .logo{
+        font-size: 1.6em;
+    }
+    }
+    .second{
+        padding: 20px;
+    }
+    .second h2{
+        font-size: 1.8em;
+    }
+    .second p {
+        font-size: 0.8em;
+    }
+    #first_section img#starts2{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #text{
+        font-size: 15vw;
+    } 
+
+
+
+    /* masjid */
+    #first_section img#masjid {
+        transform: translateY(-5px);
+    }
+}

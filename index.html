@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid al Adha</title>
+    <!-- main css are here -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <header id="header">
+        <a href="#" class="logo"> Eid-Al-Adha</a>
+    </header>
+
+    <!-- first section start here -->
+    <section id="first_section">
+        <img src="assets/images/stars.png" id="starts">
+        <img src="assets/images/stars2.png" id="starts2">
+        <img src="assets/images/moon.png" id="moon">
+        <h2 id="text">Eid Mubarak</h2>
+        <img src="assets/images/rock.png" id="rock">
+        <img src="assets/images/masjid.png" id="masjid">
+        <img src="assets/images/bottom.png" id="bottom">
+        <img src="assets/images/lamp.png" id="lamp">
+    </section>
+    <!-- first section end here -->
+    <div class="second">
+        <h2>Happy Eid Mubarak to you and your family !</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates voluptate inventore quisquam iure cupiditate quidem? Est quia eligendi ipsa voluptatibus fugit reiciendis dolorem sunt adipisci cumque voluptatum corporis harum maxime neque aliquam ipsam nulla corrupti, exercitationem quaerat saepe, illum autem. Modi eius ipsam perspiciatis similique obcaecati perferendis cumque, fuga tenetur reiciendis omnis repellendus nam aspernatur, nulla animi, voluptas dolores ipsum inventore accusantium! Aut</p>
+
+        <br>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus necessitatibus aliquid velit, repellendus nemo voluptatibus. Neque odit, quis voluptatem impedit illo corporis nemo culpa aut odio necessitatibus reprehenderit optio commodi. Magnam soluta laboriosam iure sit nobis voluptate repellendus reprehenderit vero optio beatae doloribus assumenda ex quo amet autem vel quis tempore porro nulla dignissimos, sed officiis? Quia accusantium eum aspernatur, unde harum voluptatum rerum et laboriosam quam ullam repellat perspiciatis fugit assumenda molestias quidem. Dignissimos quas architecto corrupti quod deserunt.</p> <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum laborum doloremque molestiae dicta et sunt eos ut. Incidunt minus enim repellendus delectus praesentium illum aut id qui ducimus porro nam, maxime dolorem autem harum ullam doloribus a molestiae accusamus distinctio culpa dolor reiciendis eos earum excepturi? Blanditiis facilis, deleniti porro animi, accusantium deserunt distinctio provident labore aut molestiae facere ab a, optio ratione repellendus repellat quae magnam fugiat cumque. Cum, repellendus! Cum ullam tenetur ut.</p>
+    </div>
+    
+    <!-- js here -->
+
+    <script>
+
+        let starts = document.getElementById('starts')
+        let starts2 = document.getElementById('starts2')
+        let moon = document.getElementById('moon')
+        let rock = document.getElementById('rock')
+        let masjid = document.getElementById('masjid')
+        let text = document.getElementById('text')
+        let header = document.getElementById('header')
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            starts.style.bottom = value * 0.05 +'%';
+            starts2.style.bottom = value * 0.25 +'%';
+            moon.style.bottom = value * -0.5 +'px';
+            rock.style.bottom = value * -0.75 +'px';
+            masjid.style.bottom = value * -0.10 +'px';
+            text.style.right = -100 + value * 0.5 +'%';
+            text.style.top = 50 + value * 0.1 +'%';
+            header.style.top = value * 0.5 +'px';
+        })
+
+    </script>
+
+</body>
+</html>
